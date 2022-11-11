@@ -348,7 +348,7 @@ ul#nav li:hover > ul { opacity: 1; filter: alpha(opacity=100); }
 ul#nav li:hover > ul li {
 	height: 42px;
 	overflow: visible;
-   border-bottom: 1px solid #26272C;
+   border-bottom: 1px solid #e3e3e3;
 }
 ul#nav li:hover > ul li:last-child  { border: none; }
 
