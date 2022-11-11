@@ -1350,7 +1350,7 @@ footer .copyright  li:first-child:before {
 /* Go To Top Button */
 #go-top {
 	position: fixed;
-	bottom: 0px;
+	bottom: 25px;
    right: 25px;
    display: none;
 }
@@ -1359,7 +1359,7 @@ footer .copyright  li:first-child:before {
 	border: 0 none;
 	display: block;
 	width: 60px;
-	height: 40px;
+	height: 42px;
 	background: url(/images/go-to-top-accent1.webp) no-repeat 50% 50%;
 	background-color: #ffffff;
 
@@ -1369,8 +1369,8 @@ footer .copyright  li:first-child:before {
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 
- 	border-radius: 5px 5px 0 0;
-   box-shadow: 0 -2px 2rem 0 rgb(0 0 0 / 15%);
+   border-radius: 6px 6px 6px 6px;
+   box-shadow: 0 0 2rem 0 rgb(0 0 0 / 15%);
    font: 0/0 a;
    text-shadow: none;
    color: transparent;
