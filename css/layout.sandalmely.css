@@ -28,7 +28,7 @@
 /* a. Common Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #D2D8D8 url(../images/bg.jpg); }
+body { background: #D2D8D8 url(/images/bg.webp); }
 img { border-radius: 3px; }
 .content-outer { background: #fff }
 
@@ -166,7 +166,7 @@ img { border-radius: 3px; }
    border-radius: 3px;
 }
 #sidebar .widget .submit-search {
-	background:url(../images/search-icon.png) no-repeat;
+	background:url(/images/search-icon.webp) no-repeat;
 	border:none;
 	cursor:pointer;
 	width:18px;
@@ -558,15 +558,15 @@ ul#nav ul li a {
 /* .flex-direction-nav a:hover { background-color: #ca3479; } */
 /* .flex-direction-nav .flex-next:hover { background-color: #ca3479; } */
 .flex-direction-nav .flex-next:hover { 
-   background: #ca3479 url(../images/direction-nav-right.png) no-repeat 47% 50%;
+   background: #ca3479 url(/images/direction-nav-right.webp) no-repeat 47% 50%;
  }
 .flex-direction-nav .flex-prev:hover { 
-   background: #ca3479 url(../images/direction-nav-left.png) no-repeat 47% 50%;
+   background: #ca3479 url(/images/direction-nav-left.webp) no-repeat 47% 50%;
  }
 
 .flex-direction-nav .flex-next {
 	right: 0px;
-	background: #ffffff url(../images/direction-nav-right-accent1.png) no-repeat 47% 50%;
+	background: #ffffff url(/images/direction-nav-right-accent1.webp) no-repeat 47% 50%;
    /* filter: invert(34%) sepia(68%) saturate(1173%) hue-rotate(294deg) brightness(85%) contrast(100%); */
 	position: absolute;
    z-index: 2;
@@ -574,7 +574,7 @@ ul#nav ul li a {
 }
 .flex-direction-nav .flex-prev {
 	left: 0px;
-	background: #ffffff url(../images/direction-nav-left-accent1.png) no-repeat 53% 50%;
+	background: #ffffff url(/images/direction-nav-left-accent1.webp) no-repeat 53% 50%;
 	position: absolute;
    z-index: 2;
 	border-radius: 0 5px 5px 0;
@@ -593,7 +593,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #info {
-   background: #fff url(../images/content-bg.jpg);
+   background: #fff url(/images/content-bg.webp);
    padding-top: 60px;
    padding-bottom: 42px;
 }
@@ -613,7 +613,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #works {
-   background: #f5f5f5 url(../images/works-bg.jpg);
+   background: #f5f5f5 url(/images/works-bg.webp);
    padding-top: 48px;
    padding-bottom: 36px;
    border-top: 1px solid #E3E8E8;
@@ -732,7 +732,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #journal {
-   background: #fff url(../images/content-bg.jpg);
+   background: #fff url(/images/content-bg.webp);
    padding-top: 60px;
    padding-bottom: 48px;
 }
@@ -866,7 +866,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #tweets {
-   background: #f5f5f5 url(../images/tweets-bg.jpg);
+   background: #f5f5f5 url(/images/tweets-bg.webp);
    padding-top: 60px;
    padding-bottom: 30px;
    border-top: 1px solid #E3E8E8;
@@ -1360,7 +1360,7 @@ footer .copyright  li:first-child:before {
 	display: block;
 	width: 60px;
 	height: 40px;
-	background: url(../images/go-to-top-accent1.png) no-repeat 50% 50%;
+	background: url(/images/go-to-top-accent1.webp) no-repeat 50% 50%;
 	background-color: #ffffff;
 
 	-webkit-transition: all 0.2s ease-in-out;
@@ -1376,7 +1376,7 @@ footer .copyright  li:first-child:before {
    color: transparent;
 }
 #go-top a:hover { 
-   background: url(../images/go-to-top.png) no-repeat 50% 50%;
+   background: url(/images/go-to-top.webp) no-repeat 50% 50%;
    background-color: #ca3479;
    
 }
