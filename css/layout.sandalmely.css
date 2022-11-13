@@ -401,7 +401,7 @@ ul#nav li:hover>ul li:last-child {
 
 /* Sub Menu Anchor links */
 ul#nav ul li a {
-   padding: 6px 40px;
+   padding: 6px 15px;
    margin: 0;
    white-space: nowrap;
    font-size: 13px;
