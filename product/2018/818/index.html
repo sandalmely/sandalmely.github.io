@@ -223,112 +223,165 @@
 
       /* Slider 818 Style End */
 
-      /* Bootstrap Image Modal Style Start */
+      /* Image Modal Style Start */
 
-      /*Body of the Panel when it expands*/
-      .panel .panel-body {
-         position: relative;
-         padding: 0 !important;
-         overflow: hidden;
-         height: auto;
+      /* [Object] Modal
+ * =============================== */
+      .modal {
+         opacity: 0;
+         visibility: hidden;
+         position: fixed;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         text-align: left;
+         background: rgba(0, 0, 0, .9);
+         transition: opacity .25s ease;
       }
 
-      /*Image size and transition*/
-      .panel .panel-body a img {
-         display: block;
-         margin: 0;
-         width: 100%;
-         height: 150px;
-         transition: all 0.5s;
-         -moz-transition: all 0.5s;
-         -webkit-transition: all 0.5s;
-         -o-transition: all 0.5s;
-      }
-
-      /*Transform scale effect when you hover over*/
-      .panel .panel-body a.zoom:hover img {
-         transform: scale(1.3);
-         -ms-transform: scale(1.3);
-         -webkit-transform: scale(1.3);
-         -o-transform: scale(1.3);
-         -moz-transform: scale(1.3);
-      }
-
-      /*Zoom Button*/
-      .panel .panel-body a.zoom span.overlay {
+      .modal__bg {
          position: absolute;
          top: 0;
+         right: 0;
+         bottom: 0;
          left: 0;
-         visibility: hidden;
-         height: 100%;
-         width: 100%;
-         background-color: #000;
-         opacity: 0;
-         transition: opacity .25s ease-out;
-         -moz-transition: opacity .25s ease-out;
-         -webkit-transition: opacity .25s ease-out;
-         -o-transition: opacity .25s ease-out;
+         cursor: pointer;
       }
 
-      /*Zoom Button and Tint Overlay*/
-      .panel .panel-body a.zoom:hover span.overlay {
-         display: block;
-         visibility: visible;
-         opacity: 0.55;
-         -moz-opacity: 0.55;
-         -webkit-opacity: 0.55;
-         filter: alpha(opacity=65);
-         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+      .modal-state {
+         display: none;
       }
 
-      /*Zoom Button*/
-      .panel .panel-body a.zoom:hover span.overlay i {
-         position: absolute;
-         top: 45%;
-         left: 0%;
-         width: 100%;
-         font-size: 2.25em;
-         color: #fff !important;
-         text-align: center;
+      .modal-state:checked+.modal {
          opacity: 1;
-         -moz-opacity: 1;
-         -webkit-opacity: 1;
-         filter: alpha(opacity=1);
-         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+         visibility: visible;
       }
 
-      #lightbox .modal-content {
-         display: inline-block;
+      .modal-state:checked+.modal .modal__inner {
+         top: 0;
+      }
+
+      .modal__inner {
+         transition: top .25s ease;
+         position: absolute;
+         top: -20%;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         width: 50%;
+         margin: auto;
+         overflow: auto;
+         background: #fff;
+         border-radius: 5px;
+         padding: 1em 2em;
+         height: 50%;
+      }
+
+      .modal__close {
+         position: absolute;
+         right: 1em;
+         top: 1em;
+         width: 1.1em;
+         height: 1.1em;
+         cursor: pointer;
+      }
+
+      .modal__close:after,
+      .modal__close:before {
+         content: '';
+         position: absolute;
+         width: 2px;
+         height: 1.5em;
+         background: #ccc;
+         display: block;
+         transform: rotate(45deg);
+         left: 50%;
+         margin: -3px 0 0 -1px;
+         top: 0;
+      }
+
+      .modal__close:hover:after,
+      .modal__close:hover:before {
+         background: #aaa;
+      }
+
+      .modal__close:before {
+         transform: rotate(-45deg);
+      }
+
+      @media screen and (max-width: 768px) {
+
+         .modal__inner {
+            width: 90%;
+            height: 90%;
+            box-sizing: border-box;
+         }
+      }
+
+
+      /* Other
+ * =============================== */
+      body {
+         padding: 1%;
+         font: 1/1.5em sans-serif;
          text-align: center;
       }
 
-      /* Bootstrap Image Modal Style End */
+      .btn {
+         cursor: pointer;
+         background: #27ae60;
+         display: inline-block;
+         padding: .5em 1em;
+         color: #fff;
+         border-radius: 3px;
+      }
+
+      .btn:hover,
+      .btn:focus {
+         background: #2ecc71;
+      }
+
+      .btn:active {
+         background: #27ae60;
+         box-shadow: 0 1px 2px rgba(0, 0, 0, .2) inset;
+      }
+
+      .btn--blue {
+         background: #2980b9;
+      }
+
+      .btn--blue:hover,
+      .btn--blue:focus {
+         background: #3498db;
+      }
+
+      .btn--blue:active {
+         background: #2980b9;
+      }
+
+      p img {
+         max-width: 1080px;
+         height: auto;
+         margin: 0 1em 1em 0;
+      }
+
+      /* Image Modal Style End */
    </style>
 
 </head>
 
 <body>
 
-   <!-- Boostrap Modal
+   <!-- Modal Image
    ================================================== -->
-   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               ...
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-         </div>
+   <input class="modal-state" id="modal-1" type="checkbox" />
+   <div class="modal">
+      <label class="modal__bg" for="modal-1"></label>
+      <div class="modal__inner">
+         <label class="modal__close" for="modal-1"></label>
+         <h2>Caaaats FTW!</h2>
+         <p><img src="https://i.imgur.com/HnrkBwB.gif" alt="" /></p>
       </div>
    </div>
 
