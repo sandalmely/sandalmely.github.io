@@ -33,6 +33,8 @@
    <link rel="stylesheet" href="\css\sticky.sandalmely.css">
 
    <!-- <link rel="stylesheet" href="./css/bootstrap/bootstrap.css"> -->
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <!-- <link rel="stylesheet" href=".\css\bootstrap\bootstrap.css"> -->
 
    <link rel="stylesheet" href="/css/modal.css">
@@ -223,199 +225,86 @@
 
       /* Slider 818 Style End */
 
-      /* Bootstrap Modal Style Start */
+      /* Bootstrap Image Modal Style Start */
 
-      .modal-open {
-         overflow: hidden;
-      }
-
-      .modal-open .modal {
-         overflow-x: hidden;
-         overflow-y: auto;
-      }
-
-      .modal {
-         position: fixed;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-         z-index: 1050;
-         display: none;
-         overflow: hidden;
-         outline: 0;
-      }
-
-      .modal-dialog {
+      /*Body of the Panel when it expands*/
+      .panel .panel-body {
          position: relative;
-         width: auto;
-         margin: 0.5rem;
-         pointer-events: none;
+         padding: 0 !important;
+         overflow: hidden;
+         height: auto;
       }
 
-      .modal.fade .modal-dialog {
-         transition: -webkit-transform 0.3s ease-out;
-         transition: transform 0.3s ease-out;
-         transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-         -webkit-transform: translate(0, -25%);
-         transform: translate(0, -25%);
-      }
-
-      @media screen and (prefers-reduced-motion: reduce) {
-         .modal.fade .modal-dialog {
-            transition: none;
-         }
-      }
-
-      .modal.show .modal-dialog {
-         -webkit-transform: translate(0, 0);
-         transform: translate(0, 0);
-      }
-
-      .modal-dialog-centered {
-         display: -ms-flexbox;
-         display: flex;
-         -ms-flex-align: center;
-         align-items: center;
-         min-height: calc(100% - (0.5rem * 2));
-      }
-
-      .modal-dialog-centered::before {
+      /*Image size and transition*/
+      .panel .panel-body a img {
          display: block;
-         height: calc(100vh - (0.5rem * 2));
-         content: "";
-      }
-
-      .modal-content {
-         position: relative;
-         display: -ms-flexbox;
-         display: flex;
-         -ms-flex-direction: column;
-         flex-direction: column;
+         margin: 0;
          width: 100%;
-         pointer-events: auto;
-         background-color: #fff;
-         background-clip: padding-box;
-         border: 1px solid rgba(0, 0, 0, 0.2);
-         border-radius: 0.3rem;
-         outline: 0;
+         height: 150px;
+         transition: all 0.5s;
+         -moz-transition: all 0.5s;
+         -webkit-transition: all 0.5s;
+         -o-transition: all 0.5s;
       }
 
-      .modal-backdrop {
-         position: fixed;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-         z-index: 1040;
-         background-color: #000;
+      /*Transform scale effect when you hover over*/
+      .panel .panel-body a.zoom:hover img {
+         transform: scale(1.3);
+         -ms-transform: scale(1.3);
+         -webkit-transform: scale(1.3);
+         -o-transform: scale(1.3);
+         -moz-transform: scale(1.3);
       }
 
-      .modal-backdrop.fade {
-         opacity: 0;
-      }
-
-      .modal-backdrop.show {
-         opacity: 0.5;
-      }
-
-      .modal-header {
-         display: -ms-flexbox;
-         display: flex;
-         -ms-flex-align: start;
-         align-items: flex-start;
-         -ms-flex-pack: justify;
-         justify-content: space-between;
-         padding: 1rem;
-         border-bottom: 1px solid #e9ecef;
-         border-top-left-radius: 0.3rem;
-         border-top-right-radius: 0.3rem;
-      }
-
-      .modal-header .close {
-         padding: 1rem;
-         margin: -1rem -1rem -1rem auto;
-      }
-
-      .modal-title {
-         margin-bottom: 0;
-         line-height: 1.5;
-      }
-
-      .modal-body {
-         position: relative;
-         -ms-flex: 1 1 auto;
-         flex: 1 1 auto;
-         padding: 1rem;
-      }
-
-      .modal-footer {
-         display: -ms-flexbox;
-         display: flex;
-         -ms-flex-align: center;
-         align-items: center;
-         -ms-flex-pack: end;
-         justify-content: flex-end;
-         padding: 1rem;
-         border-top: 1px solid #e9ecef;
-      }
-
-      .modal-footer> :not(:first-child) {
-         margin-left: .25rem;
-      }
-
-      .modal-footer> :not(:last-child) {
-         margin-right: .25rem;
-      }
-
-      .modal-scrollbar-measure {
+      /*Zoom Button*/
+      .panel .panel-body a.zoom span.overlay {
          position: absolute;
-         top: -9999px;
-         width: 50px;
-         height: 50px;
-         overflow: scroll;
-      }
-
-      @media (min-width: 576px) {
-         .modal-dialog {
-            max-width: 500px;
-            margin: 1.75rem auto;
-         }
-
-         .modal-dialog-centered {
-            min-height: calc(100% - (1.75rem * 2));
-         }
-
-         .modal-dialog-centered::before {
-            height: calc(100vh - (1.75rem * 2));
-         }
-
-         .modal-sm {
-            max-width: 300px;
-         }
-      }
-
-      @media (min-width: 992px) {
-         .modal-lg {
-            max-width: 800px;
-         }
-      }
-
-      .fade {
-         transition: opacity 0.15s linear;
-      }
-
-      @media screen and (prefers-reduced-motion: reduce) {
-         .fade {
-            transition: none;
-         }
-      }
-
-      .fade:not(.show) {
+         top: 0;
+         left: 0;
+         visibility: hidden;
+         height: 100%;
+         width: 100%;
+         background-color: #000;
          opacity: 0;
+         transition: opacity .25s ease-out;
+         -moz-transition: opacity .25s ease-out;
+         -webkit-transition: opacity .25s ease-out;
+         -o-transition: opacity .25s ease-out;
       }
 
-      /* Bootstrap Modal Style End */
+      /*Zoom Button and Tint Overlay*/
+      .panel .panel-body a.zoom:hover span.overlay {
+         display: block;
+         visibility: visible;
+         opacity: 0.55;
+         -moz-opacity: 0.55;
+         -webkit-opacity: 0.55;
+         filter: alpha(opacity=65);
+         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+      }
+
+      /*Zoom Button*/
+      .panel .panel-body a.zoom:hover span.overlay i {
+         position: absolute;
+         top: 45%;
+         left: 0%;
+         width: 100%;
+         font-size: 2.25em;
+         color: #fff !important;
+         text-align: center;
+         opacity: 1;
+         -moz-opacity: 1;
+         -webkit-opacity: 1;
+         filter: alpha(opacity=1);
+         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+      }
+
+      #lightbox .modal-content {
+         display: inline-block;
+         text-align: center;
+      }
+
+      /* Bootstrap Image Modal Style End */
    </style>
 
 </head>
@@ -424,25 +313,26 @@
 
    <!-- Boostrap Modal
    ================================================== -->
-   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               ...
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+         </div>
       </div>
-    </div>
+   </div>
 
    <!-- Header
    ================================================== -->
@@ -545,17 +435,26 @@
                      <!-- Slider Start -->
                      <div class="slide_viewer">
                         <div class="slide_group">
-                           <div class="slide" data-toggle="modal" data-target="#exampleModalCenter">
-                              <a href="#" data-toggle="modal" data-target="#exampleModalCenter"></a>
+                           <div class="slide">
+                              <div class="panel panel-default">
+                                 <div class="panel-body">
+                                    <a href="#" class="zoom" data-toggle="modal" data-target="#lightbox">
+                                       <img
+                                          src="https://raw.githubusercontent.com/yuliya5/image-modal-responsive/master/images/mountains1.jpg"
+                                          alt="...">
+                                       <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                                    </a>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="slide" data-toggle="modal" data-target="#exampleModalCenter">
-                              <a href="#" data-toggle="modal" data-target="#exampleModalCenter"></a>
+                           <div class="slide">
+
                            </div>
-                           <div class="slide" data-toggle="modal" data-target="#exampleModalCenter">
-                              <a href="#" data-toggle="modal" data-target="#exampleModalCenter"></a>
+                           <div class="slide">
+
                            </div>
-                           <div class="slide" data-toggle="modal" data-target="#exampleModalCenter">
-                              <a href="#" data-toggle="modal" data-target="#exampleModalCenter"></a>
+                           <div class="slide">
+
                            </div>
                         </div>
                      </div>
@@ -766,6 +665,31 @@
          advance();
       });
    </script> <!-- Slider 818 Script End -->
+
+   <!-- Bootstrap Image Modal Script Start -->
+   <script>
+      $(document).ready(function () {
+         var $lightbox = $('#lightbox');
+         $('[data-target="#lightbox"]').on('click', function (event) {
+            var $img = $(this).find('img'),
+               src = $img.attr('src'),
+               alt = $img.attr('alt'),
+               css = {
+                  'maxWidth': $(window).width() - 100,
+                  'maxHeight': $(window).height() - 100
+               };
+            $lightbox.find('img').attr('src', src);
+            $lightbox.find('img').attr('alt', alt);
+            $lightbox.find('img').css(css);
+         });
+         $lightbox.on('shown.bs.modal', function (e) {
+            var $img = $lightbox.find('img');
+            $lightbox.find('.modal-dialog').css({ 'width': $img.width() });
+            $lightbox.find('.close').removeClass('hidden');
+         });
+      });
+   </script>
+   <!-- Bootstrap Image Modal Script End -->
 
 </body>
 
