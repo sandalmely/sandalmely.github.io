@@ -28,7 +28,7 @@
     pointer-events: none;
     position: absolute;
     right: 0;
-    top: 10px;
+    top: -5px;
     width: 4.5em;
 }
 
@@ -38,7 +38,7 @@
 
 .details-modal .details-modal-title {
     color: #111827;
-    padding: 1.5em 2em;
+    padding: 0.5em 2em;
     pointer-events: all;
     position: relative;
     width: calc(100% - 10em);
@@ -48,11 +48,13 @@
     font-size: 1.25rem;
     font-weight: 600;
     line-height: normal;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
 }
 
 .details-modal .details-modal-content {
     border-top: 1px solid #e0e0e0;
-    padding: 2em;
+    padding: 1em;
     pointer-events: all;
     overflow: auto;
 }
@@ -139,3 +141,32 @@ code {
     opacity: 0.5;
     position: relative;
 }
+
+/* mobile wide/smaller tablets
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+    .details-modal {
+        background: #ffffff;
+        border-radius: 0.5em;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        left: 50%;
+        max-width: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: left;
+        max-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 9999;
+    }
+ }
+
+ /* mobile narrow
+  -------------------------------------------------------------------------- */
+ @media only screen and (max-width: 480px) {
+
+ }
