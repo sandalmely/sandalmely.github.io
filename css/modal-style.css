@@ -173,6 +173,10 @@ code {
     .details-modal .details-modal-content {
         padding: 1em;
     }
+
+    summary {
+        text-align: center;
+    }
 }
 
 /* mobile narrow
