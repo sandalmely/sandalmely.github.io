@@ -222,7 +222,7 @@ header {
    z-index: 3;
    position: relative;
    width: 100%;
-   background: rgba(255,255,255,0.8);
+   background: rgba(255, 255, 255, 1);
    backdrop-filter: saturate(180%) blur(20px);
    -webkit-backdrop-filter: saturate(180%) blur(20px);
    -webkit-transition: all .2s ease-in-out;
@@ -230,6 +230,12 @@ header {
    -o-transition: all .2s ease-in-out;
    -ms-transition: all .2s ease-in-out;
    transition: all .2s ease-in-out;
+}
+
+.appleblur {
+   background: rgba(255, 255, 255, 0.8);
+   backdrop-filter: saturate(180%) blur(20px);
+   -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
 /* BACKUP */
@@ -342,7 +348,7 @@ ul#nav ul {
    position: absolute;
    top: 100%;
    left: 0;
-   background: #f0f0f0;
+   background: rgb(248, 248, 248);
    min-width: 100%;
 
    border-radius: 5px;
@@ -389,16 +395,19 @@ ul#nav ul li {
 ul#nav li:hover>ul {
    opacity: 1;
    filter: alpha(opacity=100);
+   
 }
 
 ul#nav li:hover>ul li {
    height: 42px;
    overflow: visible;
    border-bottom: 1px solid #e3e3e3;
+   
 }
 
 ul#nav li:hover>ul li:last-child {
    border: none;
+   
 }
 
 /* Sub Menu Anchor links */
@@ -407,6 +416,7 @@ ul#nav ul li a {
    margin: 0;
    white-space: nowrap;
    font-size: 13px;
+   
 }
 
 
