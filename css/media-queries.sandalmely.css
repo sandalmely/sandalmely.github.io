@@ -146,6 +146,29 @@
 
 }
 
+/* Scrollbar Style */
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   width: 5px;
+   border-radius: 5px;
+   background: rgba(202, 52, 121, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(202, 52, 121, 0.75);
+}
+
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 
@@ -682,6 +705,29 @@
 
 }
 
+/* Scrollbar Style */
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   width: 5px;
+   border-radius: 5px;
+   background: rgba(202, 52, 121, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(202, 52, 121, 0.75);
+}
+
 /* mobile narrow
   -------------------------------------------------------------------------- */
 
@@ -779,6 +825,29 @@
       margin-right: auto;
    }
 
+   /* Scrollbar Style */
+   /* width */
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+
+   /* Track */
+   ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 5px;
+      background: rgba(202, 52, 121, 1);
+   }
+
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+      background: rgba(202, 52, 121, 0.75);
+   }
+
 }
 
 @media only screen and (min-width: 901px) {
@@ -807,6 +876,29 @@
       height: auto;
       margin-left: auto;
       margin-right: auto;
+   }
+
+   /* Scrollbar Style */
+   /* width */
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+
+   /* Track */
+   ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 5px;
+      background: rgba(202, 52, 121, 1);
+   }
+
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+      background: rgba(202, 52, 121, 0.75);
    }
 
 }
@@ -839,6 +931,29 @@
       margin-right: auto;
    }
 
+   /* Scrollbar Style */
+   /* width */
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+
+   /* Track */
+   ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 5px;
+      background: rgba(202, 52, 121, 1);
+   }
+
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+      background: rgba(202, 52, 121, 0.75);
+   }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -867,6 +982,29 @@
       height: auto;
       margin-left: auto;
       margin-right: auto;
+   }
+
+   /* Scrollbar Style */
+   /* width */
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+
+   /* Track */
+   ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 5px;
+      background: rgba(202, 52, 121, 1);
+   }
+
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+      background: rgba(202, 52, 121, 0.75);
    }
 
 }
@@ -899,6 +1037,29 @@
       margin-right: auto;
    }
 
+   /* Scrollbar Style */
+   /* width */
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+
+   /* Track */
+   ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 5px;
+      background: rgba(202, 52, 121, 1);
+   }
+
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+      background: rgba(202, 52, 121, 0.75);
+   }
+
 }
 
 @media only screen and (min-width: 1450px) {
@@ -927,6 +1088,29 @@
       height: auto;
       margin-left: auto;
       margin-right: auto;
+   }
+
+   /* Scrollbar Style */
+   /* width */
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+
+   /* Track */
+   ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 5px;
+      background: rgba(202, 52, 121, 1);
+   }
+
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+      background: rgba(202, 52, 121, 0.75);
    }
 
 }
