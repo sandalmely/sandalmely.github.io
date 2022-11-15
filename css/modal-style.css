@@ -145,6 +145,7 @@ code {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     width: 5px;
+    border-radius: 5px;
     background: #CA3479; 
   }
   
