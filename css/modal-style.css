@@ -1,53 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #f9fafb;
-    font-size: 70%;
-    line-height: 1.4;
-    font-family: "Inter", sans-serif;
-    color: #6b7280;
-    font-weight: 400;
-}
-
-@media only screen and (min-width: 600px) {
-    body {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        height: auto;
-        font-size: 100%;
-    }
-}
-
-.button {
-    appearance: none;
-    background: #16a34a;
-    border-radius: 0.25em;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 500;
-    height: 3em;
-    line-height: 3em;
-    padding: 0 1em;
-}
-
-.button:hover {
-    background-color: #17ac4e;
-}
-
 .details-modal {
     background: #ffffff;
     border-radius: 0.5em;
@@ -58,7 +10,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: fit-content;
+    width: 30em;
     text-align: left;
     max-height: 90vh;
     display: flex;
@@ -100,7 +52,7 @@ body {
     border-top: 1px solid #e0e0e0;
     padding: 2em;
     pointer-events: all;
-    overflow: auto!important;
+    overflow: auto;
 }
 
 .details-modal-overlay {
