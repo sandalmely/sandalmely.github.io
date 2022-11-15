@@ -177,6 +177,10 @@ code {
     summary {
         text-align: center;
     }
+
+    summary .button {
+        padding: 12px 32px!important;
+    }
 }
 
 /* mobile narrow
