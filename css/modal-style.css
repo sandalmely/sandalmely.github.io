@@ -56,7 +56,7 @@
 }
 .details-modal .img-modal-container {
     pointer-events: all;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .details-modal-overlay {
