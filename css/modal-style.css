@@ -38,7 +38,7 @@
 
 .details-modal .details-modal-title {
     color: #111827;
-    padding: 0.5em 2em;
+    padding: 0.5em 1.5em;
     pointer-events: all;
     position: relative;
     width: calc(100% - 10em);
@@ -54,7 +54,7 @@
 
 .details-modal .details-modal-content {
     border-top: 1px solid #e0e0e0;
-    padding: 1em;
+    padding: 1.5em;
     pointer-events: all;
     overflow: auto;
 }
@@ -168,6 +168,10 @@ code {
 
     .details-modal .details-modal-title {
         padding: 0.5em 1em;
+    }
+
+    .details-modal .details-modal-content {
+        padding: 1em;
     }
 }
 
