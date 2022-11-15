@@ -39,7 +39,7 @@
     padding: 1.5em 2em;
     pointer-events: all;
     position: relative;
-    width: calc(100% - 15em);
+    width: calc(100% - 10em);
 }
 
 .details-modal .details-modal-title h1 {
