@@ -92,14 +92,18 @@
          position: absolute;
          width: 100%;
       }
+      .slide img {
+         height: 100%;
+         width: 80%;
+      }
 
       .slide:first-child {
          display: block;
       }
 
       .slide:nth-of-type(1) {
-         background: #D7A151;
-         background: url("https://sandalmely.github.io/images/dummy1080.webp");
+         /* background: #D7A151; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
          border-radius: 6px;
          background-size: contain;
          background-repeat: no-repeat;
@@ -107,8 +111,8 @@
       }
 
       .slide:nth-of-type(2) {
-         background: #F4E4CD;
-         background: url("https://sandalmely.github.io/images/dummy1080.webp");
+         /* background: #F4E4CD; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
          border-radius: 6px;
          background-size: contain;
          background-repeat: no-repeat;
@@ -116,8 +120,8 @@
       }
 
       .slide:nth-of-type(3) {
-         background: #C75534;
-         background: url("https://sandalmely.github.io/images/dummy1080.webp");
+         /* background: #C75534; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
          border-radius: 6px;
          background-size: contain;
          background-repeat: no-repeat;
@@ -125,8 +129,8 @@
       }
 
       .slide:nth-of-type(4) {
-         background: #D1D1D4;
-         background: url("https://sandalmely.github.io/images/dummy1080.webp");
+         /* background: #D1D1D4; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
          border-radius: 6px;
          background-size: contain;
          background-repeat: no-repeat;
@@ -166,29 +170,30 @@
       }
 
       .previous_btn {
-         bottom: 0;
          left: 0px;
-         margin: auto;
+         background: #ffffff url(/images/direction-nav-left-accent1.webp) no-repeat 53% 50%;
          position: absolute;
-         top: 0;
-         fill: #000;
+         z-index: 2;
+         /* border-radius: 0 6px 6px 0; */
+         border-radius: 6px;
       }
+
       .previous_btn:hover {
-         color: #CA3479;
-         fill: #CA3479;
+         background: #ca3479 url(/images/direction-nav-left.webp) no-repeat 47% 50%;
       }
 
       .next_btn {
-         bottom: 0;
-         margin: auto;
-         position: absolute;
          right: 0px;
-         top: 0;
-         fill: #000;
+         background: #ffffff url(/images/direction-nav-right-accent1.webp) no-repeat 47% 50%;
+         /* filter: invert(34%) sepia(68%) saturate(1173%) hue-rotate(294deg) brightness(85%) contrast(100%); */
+         position: absolute;
+         z-index: 2;
+         /* border-radius: 6px 0 0 6px; */
+         border-radius: 6px;
       }
+
       .next_btn:hover {
-         color: #CA3479;
-         fill: #CA3479;
+         background: #ca3479 url(/images/direction-nav-right.webp) no-repeat 47% 50%;
       }
 
       .icon-prev,
@@ -200,16 +205,17 @@
       .next_btn {
          cursor: pointer;
          height: 65px;
-         opacity: 0.5;
+         opacity: 1;
          -webkit-transition: opacity 0.4s ease-in-out;
          -moz-transition: opacity 0.4s ease-in-out;
          -ms-transition: opacity 0.4s ease-in-out;
          -o-transition: opacity 0.4s ease-in-out;
          transition: opacity 0.4s ease-in-out;
-         /* width: 65px; */
+         width: 25px;
          fill: #000;
          color: #CA3479;
       }
+
       .icon-prev:hover,
       .icon-next:hover {
          fill: #CA3479;
@@ -217,18 +223,23 @@
 
       .previous_btn:hover,
       .next_btn:hover {
-         color:#CA3479;
+         color: #CA3479;
          fill: #CA3479;
          opacity: 1;
       }
 
       @media only screen and (max-width: 767px) {
          .previous_btn {
-            left: 0px;
+            left: 10px;
          }
 
          .next_btn {
-            right: 0px;
+            right: 10px;
+         }
+
+         .slide img {
+            width: 100%;
+            height: 100%;
          }
 
          .slide_viewer {
@@ -435,38 +446,38 @@
 
    <!-- Modal Image
    ================================================== -->
-   <div class="container">
-      <details>
-         <summary>
-            <div class="button">
-               Show me the modal
-            </div>
-            <div class="details-modal-overlay"></div>
-         </summary>
-         <div class="details-modal">
-            <div class="details-modal-close">
-               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                     d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z"
-                     fill="black" />
-               </svg>
-            </div>
-            <div class="details-modal-title">
-               <h1>My details modal</h1>
-            </div>
-            <div class="details-modal-content">
-               <div class="img-modal-container">
-                  <img src="/images/dummy1080.webp" alt="" style="width: auto;" />
-               </div>
+   <!-- <div class="container"> -->
+      <!-- <details> -->
+         <!-- <summary> -->
+            <!-- <div class="button"> -->
+               <!-- Show me the modal -->
+            <!-- </div> -->
+            <!-- <div class="details-modal-overlay"></div> -->
+         <!-- </summary> -->
+         <!-- <div class="details-modal"> -->
+            <!-- <div class="details-modal-close"> -->
+               <!-- <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"> -->
+                  <!-- <path fill-rule="evenodd" clip-rule="evenodd" -->
+                     <!-- d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" -->
+                     <!-- fill="black" /> -->
+               <!-- </svg> -->
+            <!-- </div> -->
+            <!-- <div class="details-modal-title"> -->
+               <!-- <h1>My details modal</h1> -->
+            <!-- </div> -->
+            <!-- <div class="details-modal-content"> -->
+               <!-- <div class="img-modal-container"> -->
+                  <!-- <img src="/images/dummy1080.webp" alt="" style="width: auto;" /> -->
+               <!-- </div> -->
                <!-- <p> -->
                <!-- You can click the X in the corner or click the overlay to close this modal. -->
                <!-- Something like this could be useful as a nice way to show additional information, -->
                <!-- but that's about as far as I would take it. It's just a nice way of styling the details element. -->
                <!-- </p> -->
-            </div>
-         </div>
-      </details>
-   </div>
+            <!-- </div> -->
+         <!-- </div> -->
+      <!-- </details> -->
+   <!-- </div> -->
 
    <!-- Header
    ================================================== -->
@@ -568,17 +579,17 @@
                      <!-- Slider Start -->
                      <div class="slide_viewer">
                         <div class="slide_group">
-                           <div class="slide">
-
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/dummy1080.webp" alt="">
                            </div>
-                           <div class="slide">
-
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/dummy1080.webp" alt="">
                            </div>
-                           <div class="slide">
-
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/dummy1080.webp" alt="">
                            </div>
-                           <div class="slide">
-
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/dummy1080.webp" alt="">
                            </div>
                         </div>
                      </div>
@@ -589,31 +600,31 @@
 
                   <div class="directional_nav">
                      <div class="previous_btn" title="Previous">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                           x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66">
-                           <g>
-                              <g>
-                                 <path class="icon-prev" fill="#474544"
-                                    d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-                            c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z" />
-                                 <path class="icon-prev" fill="#474544"
-                                    d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z" />
-                              </g>
-                           </g>
-                        </svg>
+                        <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" -->
+                        <!-- x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66"> -->
+                        <!-- <g> -->
+                        <!-- <g> -->
+                        <!-- <path class="icon-prev" fill="#474544" -->
+                        <!-- d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118 -->
+                        <!-- c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z" /> -->
+                        <!-- <path class="icon-prev" fill="#474544" -->
+                        <!-- d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z" /> -->
+                        <!-- </g> -->
+                        <!-- </g> -->
+                        <!-- </svg> -->
                      </div>
                      <div class="next_btn" title="Next">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                           x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66">
-                           <g>
-                              <g>
-                                 <path class="icon-next" fill="#474544"
-                                    d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z" />
-                                 <path class="icon-next" fill="#474544"
-                                    d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z" />
-                              </g>
-                           </g>
-                        </svg>
+                        <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" -->
+                        <!-- x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66"> -->
+                        <!-- <g> -->
+                        <!-- <g> -->
+                        <!-- <path class="icon-next" fill="#474544" -->
+                        <!-- d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z" /> -->
+                        <!-- <path class="icon-next" fill="#474544" -->
+                        <!-- d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z" /> -->
+                        <!-- </g> -->
+                        <!-- </g> -->
+                        <!-- </svg> -->
                      </div>
                   </div><!-- End // .directional_nav -->
                   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
