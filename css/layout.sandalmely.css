@@ -222,7 +222,9 @@ header {
    z-index: 3;
    position: relative;
    width: 100%;
-   background: white;
+   background: rgba(255,255,255,0.8);
+   backdrop-filter: saturate(180%) blur(20px);
+   -webkit-backdrop-filter: saturate(180%) blur(20px);
    -webkit-transition: all .2s ease-in-out;
    -moz-transition: all .2s ease-in-out;
    -o-transition: all .2s ease-in-out;
