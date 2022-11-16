@@ -176,6 +176,7 @@ code {
 
     summary {
         text-align: center;
+        padding-inline-end: 10px;
     }
 
     summary .button {
