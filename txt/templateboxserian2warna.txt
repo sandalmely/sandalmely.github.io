@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.gradient {
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  background: linear-gradient(to bottom, 
+      red    50%, 
+      green  50%
+      
+  );
+}
+</style>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<div class="gradient"></div>
+
+</body>
+</html>
