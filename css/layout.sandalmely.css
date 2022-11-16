@@ -1703,14 +1703,18 @@ footer .copyright li:first-child:before {
    /* border: 1px solid rgba(0, 0, 0, .2); */
  }
  
- .blue {
-   background: #13b4ff;
+ .biru818 {
+   background: #2051ad;
  }
  
- .purple {
-   background: #ab3fdd;
+ .tosca818 {
+   background: #216578;
+ }
+
+ .orange818 {
+   background: #fb781d;
  }
  
- .wine {
-   background: #ae163e;
+ .merah818 {
+   background: #c43b4b;
  }
