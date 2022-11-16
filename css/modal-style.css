@@ -144,6 +144,10 @@ code {
     position: relative;
 }
 
+details summary #btnsummary1 {
+    margin-inline-end: 5px;
+}
+
 /* mobile wide/smaller tablets
 ---------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
@@ -180,7 +184,7 @@ code {
     }
 
     summary .button {
-        padding: 12px 32px!important;
+        padding: 12px 32px !important;
     }
 }
 
