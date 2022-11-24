@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+   <title>Peta | Sandal Mely</title>
+   <meta name="description" content="Ayanami, Umarkov's Waifu">
+   <meta name="author" content="Umarkov">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="/css/default.sandalmely.css">
+   <link rel="stylesheet" href="\css\default.sandalmely.css">
+
+   <link rel="stylesheet" href="/css/default.sandalmely.css">
+   <link rel="stylesheet" href="\css\default.sandalmely.css">
+
+   <link rel="stylesheet" href="/css/layout.sandalmely.css">
+   <link rel="stylesheet" href="\css\layout.sandalmely.css">
+
+   <link rel="stylesheet" href="/css/seriansandal.css">
+   <link rel="stylesheet" href="\css\seriansandal.css">
+
+   <link rel="stylesheet" href="/css/sticky.sandalmely.css">
+   <link rel="stylesheet" href="\css\sticky.sandalmely.css">
+
+   <!-- <link rel="stylesheet" href="./css/bootstrap/bootstrap.css"> -->
+   <!-- <link rel="stylesheet" href=".\css\bootstrap\bootstrap.css"> -->
+
+   <link rel="stylesheet" href="/css/modal.css">
+   <link rel="stylesheet" href="\css\modal.css">
+   <link rel="stylesheet" href="/css/modal-style.css">
+   <link rel="stylesheet" href="\css\modal-style.css">
+
+   <link rel="stylesheet" href="/css/carousel-bootstrap.css">
+   <link rel="stylesheet" href="\css\carousel-bootstrap.css">
+
+   <link rel="stylesheet" href="/css/anouncements.css">
+   <link rel="stylesheet" href="\css\anouncements.css">
+
+   <link rel="stylesheet" href="/css/media-queries.sandalmely.css">
+   <link rel="stylesheet" href="\css\media-queries.sandalmely.css">
+
+   <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="\css\font-awesome\css\font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+   <!-- Script
+   ================================================== -->
+   <script src="/js/modernizr.js"></script>
+   <script src="https://use.fontawesome.com/f3c6d70e1c.js"></script>
+
+
+   <!-- Favicons
+	================================================== -->
+   <link rel="icon" href="/images/favicon-mely.webp" type="image" sizes="256x256">
+
+
+   <style>
+      /* Slider 818 Style Start */
+      .slider {
+         margin: 0 auto;
+         max-width: 940px;
+      }
+
+      .slide_viewer {
+         height: 470px;
+         overflow: hidden;
+         position: relative;
+      }
+
+      .slide_group {
+         height: 100%;
+         position: relative;
+         width: 100%;
+      }
+
+      .slide {
+         display: none;
+         background-size: contain;
+         height: 100%;
+         position: absolute;
+         width: 100%;
+      }
+
+      .slide img {
+         height: 100%;
+         width: 80%;
+         border-radius: 6px;
+      }
+
+      .slide:first-child {
+         display: block;
+      }
+
+      .slide:nth-of-type(1) {
+         /* background: #D7A151; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
+         border-radius: 6px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+      }
+
+      .slide:nth-of-type(2) {
+         /* background: #F4E4CD; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
+         border-radius: 6px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+      }
+
+      .slide:nth-of-type(3) {
+         /* background: #C75534; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
+         border-radius: 6px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+      }
+
+      .slide:nth-of-type(4) {
+         /* background: #D1D1D4; */
+         /* background: url("https://sandalmely.github.io/images/dummy1080.webp"); */
+         border-radius: 6px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+      }
+
+      .slide_buttons {
+         left: 0;
+         position: absolute;
+         right: 0;
+         text-align: center;
+      }
+
+      a.slide_btn {
+         color: #e6e6e6;
+         font-size: 42px;
+         margin: 0 0.175em;
+         -webkit-transition: all 0.4s ease-in-out;
+         -moz-transition: all 0.4s ease-in-out;
+         -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+         transition: all 0.4s ease-in-out;
+      }
+
+      .slide_btn.active,
+      .slide_btn:hover {
+         color: #CA3479;
+         cursor: pointer;
+      }
+
+      .directional_nav {
+         height: 70px;
+         margin: 0 auto;
+         max-width: 940px;
+         position: relative;
+         top: -268px;
+      }
+
+      .previous_btn {
+         left: 0px;
+         background: #ffffff url(/images/direction-nav-left-accent1.webp) no-repeat 53% 50%;
+         position: absolute;
+         z-index: 2;
+         /* border-radius: 0 6px 6px 0; */
+         border-radius: 6px;
+      }
+
+      .previous_btn:hover {
+         background: #ca3479 url(/images/direction-nav-left.webp) no-repeat 47% 50%;
+      }
+
+      .next_btn {
+         right: 0px;
+         background: #ffffff url(/images/direction-nav-right-accent1.webp) no-repeat 47% 50%;
+         /* filter: invert(34%) sepia(68%) saturate(1173%) hue-rotate(294deg) brightness(85%) contrast(100%); */
+         position: absolute;
+         z-index: 2;
+         /* border-radius: 6px 0 0 6px; */
+         border-radius: 6px;
+      }
+
+      .next_btn:hover {
+         background: #ca3479 url(/images/direction-nav-right.webp) no-repeat 47% 50%;
+      }
+
+      .icon-prev,
+      .icon-next {
+         fill: #000;
+      }
+
+      .previous_btn,
+      .next_btn {
+         cursor: pointer;
+         height: 65px;
+         opacity: 1;
+         -webkit-transition: opacity 0.4s ease-in-out;
+         -moz-transition: opacity 0.4s ease-in-out;
+         -ms-transition: opacity 0.4s ease-in-out;
+         -o-transition: opacity 0.4s ease-in-out;
+         transition: opacity 0.4s ease-in-out;
+         width: 25px;
+         fill: #000;
+         color: #CA3479;
+      }
+
+      .icon-prev:hover,
+      .icon-next:hover {
+         fill: #CA3479;
+      }
+
+      .previous_btn:hover,
+      .next_btn:hover {
+         color: #CA3479;
+         fill: #CA3479;
+         opacity: 1;
+      }
+
+      @media only screen and (max-width: 767px) {
+         .previous_btn {
+            left: 10px;
+         }
+
+         .next_btn {
+            right: 10px;
+         }
+
+         .slide img {
+            width: 100%;
+            height: 100%;
+         }
+
+         .slide_viewer {
+            height: 340px;
+            overflow: hidden;
+            position: relative;
+         }
+
+         .directional_nav {
+            height: 70px;
+            margin: 0 auto;
+            max-width: 940px;
+            position: relative;
+            top: -203px;
+         }
+      }
+
+      /* Slider 818 Style End */
+
+      /* Image Modal Style Start */
+
+      .modal-open {
+         overflow: hidden
+      }
+
+      .modal-open .modal {
+         overflow-x: hidden;
+         overflow-y: auto
+      }
+
+      .modal {
+         position: fixed;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         z-index: 1050;
+         display: none;
+         overflow: hidden;
+         outline: 0
+      }
+
+      .modal-dialog {
+         position: relative;
+         width: auto;
+         margin: .5rem;
+         pointer-events: none
+      }
+
+      .modal.fade .modal-dialog {
+         transition: -webkit-transform .3s ease-out;
+         transition: transform .3s ease-out;
+         transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+         -webkit-transform: translate(0, -25%);
+         transform: translate(0, -25%)
+      }
+
+      @media screen and (prefers-reduced-motion:reduce) {
+         .modal.fade .modal-dialog {
+            transition: none
+         }
+      }
+
+      .modal.show .modal-dialog {
+         -webkit-transform: translate(0, 0);
+         transform: translate(0, 0)
+      }
+
+      .modal-dialog-centered {
+         display: -ms-flexbox;
+         display: flex;
+         -ms-flex-align: center;
+         align-items: center;
+         min-height: calc(100% - (.5rem * 2))
+      }
+
+      .modal-dialog-centered::before {
+         display: block;
+         height: calc(100vh - (.5rem * 2));
+         content: ""
+      }
+
+      .modal-content {
+         position: relative;
+         display: -ms-flexbox;
+         display: flex;
+         -ms-flex-direction: column;
+         flex-direction: column;
+         width: 100%;
+         pointer-events: auto;
+         background-color: #fff;
+         background-clip: padding-box;
+         border: 1px solid rgba(0, 0, 0, .2);
+         border-radius: .3rem;
+         outline: 0
+      }
+
+      .modal-backdrop {
+         position: fixed;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         z-index: 1040;
+         background-color: #000
+      }
+
+      .modal-backdrop.fade {
+         opacity: 0
+      }
+
+      .modal-backdrop.show {
+         opacity: .5
+      }
+
+      .modal-header {
+         display: -ms-flexbox;
+         display: flex;
+         -ms-flex-align: start;
+         align-items: flex-start;
+         -ms-flex-pack: justify;
+         justify-content: space-between;
+         padding: 1rem;
+         border-bottom: 1px solid #e9ecef;
+         border-top-left-radius: .3rem;
+         border-top-right-radius: .3rem
+      }
+
+      .modal-header .close {
+         padding: 1rem;
+         margin: -1rem -1rem -1rem auto
+      }
+
+      .modal-title {
+         margin-bottom: 0;
+         line-height: 1.5
+      }
+
+      .modal-body {
+         position: relative;
+         -ms-flex: 1 1 auto;
+         flex: 1 1 auto;
+         padding: 1rem
+      }
+
+      .modal-footer {
+         display: -ms-flexbox;
+         display: flex;
+         -ms-flex-align: center;
+         align-items: center;
+         -ms-flex-pack: end;
+         justify-content: flex-end;
+         padding: 1rem;
+         border-top: 1px solid #e9ecef
+      }
+
+      .modal-footer>:not(:first-child) {
+         margin-left: .25rem
+      }
+
+      .modal-footer>:not(:last-child) {
+         margin-right: .25rem
+      }
+
+      .modal-scrollbar-measure {
+         position: absolute;
+         top: -9999px;
+         width: 50px;
+         height: 50px;
+         overflow: scroll
+      }
+
+      @media (min-width:576px) {
+         .modal-dialog {
+            max-width: 500px;
+            margin: 1.75rem auto
+         }
+
+         .modal-dialog-centered {
+            min-height: calc(100% - (1.75rem * 2))
+         }
+
+         .modal-dialog-centered::before {
+            height: calc(100vh - (1.75rem * 2))
+         }
+
+         .modal-sm {
+            max-width: 300px
+         }
+      }
+
+      @media (min-width:992px) {
+         .modal-lg {
+            max-width: 800px
+         }
+      }
+
+      /* Image Modal Style End */
+   </style>
+
+</head>
+
+<body>
+
+
+
+   <!-- Header
+   ================================================== -->
+   <header id="myHeader" class="appleblur">
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <div class="logo">
+               <a href="/"><img alt="" src="/images/logo-mely.webp"></a>
+            </div>
+
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+               <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+
+                  <li><a href="/">Beranda</a></li>
+                  <li><span><a href="/catalogs">Katalog Sandal</a></span>
+                     <ul>
+                        <li><a href="/catalogs/basic">Basic</a></li>
+                        <li><a href="/catalogs/2014">2014</a></li>
+                        <li><a href="/catalogs/2016">2016</a></li>
+                        <li><a href="/catalogs/2017">2017</a></li>
+                        <li><a href="/catalogs/2018">2018</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="/about.html">Tentang</a></li>
+                  <li><a href="/contact-us.html">Hubungi</a></li>
+
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+         </div>
+
+      </div>
+
+   </header> <!-- Header End -->
+
+   <!-- Page Title
+   ================================================== -->
+   <div id="page-title">
+
+      <div class="row">
+
+         <div class="ten columns centered text-center">
+            <h1>Product Details<span>.</span></h1>
+            <!-- <p>Menampilkan infomasi/detail seputar produk yang dimaksud. Berikut adalah info nya</p> -->
+         </div>
+
+      </div>
+
+   </div> <!-- Page Title End-->
+
+   <!-- Content
+   ================================================== -->
+   <div class="content-outer">
+
+      <div id="page-content" class="row portfolio">
+
+         <section class="entry cf">
+
+            <div id="secondary" class="four columns entry-details">
+
+               <h1>Peta</h1>
+
+               <div class="entry-description">
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                     aliquip ex ea commodo consequat.</p>
+
+               </div>
+
+               <ul class="portfolio-meta-list">
+                  <li><span>Katalog: </span>Basic</li>
+                  <li><span>Tali: </span>1 Warna</li>
+                  <li><span>Warna: </span>
+                     <div class="box birupanda"></div>
+                     <div class="box hijaupanda"></div>
+                     <div class="box merahpanda"></div>
+                     <div class="box orangepanda"></div>
+                  </li>
+               </ul>
+
+               <!-- <a class="button" href="#">Size Chart</a> -->
+
+               <!-- Modal Image
+               ================================================== -->
+               <div class="container">
+                  <details>
+                     <summary>
+                        <div class="button" id="btnsummary1">
+                           Size Chart
+                        </div>
+                        <a class="button" href="#" id="btnsummary2">Chat Us</a>
+                        <div class="details-modal-overlay"></div>
+                     </summary>
+                     <div class="details-modal">
+                        <div class="details-modal-close">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z"
+                                 fill="black" />
+                           </svg>
+                        </div>
+                        <div class="details-modal-title">
+                           <h1>Size Chart</h1>
+                        </div>
+                        <div class="details-modal-content">
+                           <div class="img-modal-container">
+                              <img src="/images/dummy900500.webp" alt="" />
+                           </div>
+                           <!-- <p> -->
+                           <!-- You can click the X in the corner or click the overlay to close this modal. -->
+                           <!-- Something like this could be useful as a nice way to show additional information, -->
+                           <!-- but that's about as far as I would take it. It's just a nice way of styling the details element. -->
+                           <!-- </p> -->
+                        </div>
+                     </div>
+                  </details>
+               </div> <!-- Modal Image End -->
+
+               <!-- <a class="button" href="#">Buy Now</a> -->
+
+            </div> <!-- secondary End-->
+
+            <div id="primary" class="eight columns">
+
+               <div class="entry-media">
+
+                  <!-- <img src="/images/dummy1080.webp" alt="" />
+                  <img src="/images/dummy1080.webp" alt="" /> -->
+
+                  <div class="slider">
+                     <!-- Slider Start -->
+                     <div class="slide_viewer">
+                        <div class="slide_group">
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/product/2016/Panda/Panda-Blue-cy2e3d8se7.webp" alt="">
+                           </div>
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/product/2016/Panda/Panda-Green-e0cm4jy3ra.webp" alt="">
+                           </div>
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/product/2016/Panda/Panda-Red-tji76rrqt4.webp" alt="">
+                           </div>
+                           <div class="slide" style="text-align: center;">
+                              <img src="/images/product/2016/Panda/Panda-Orange-9vtd04agj7.webp" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div><!-- End // .slider -->
+
+                  <div class="slide_buttons">
+                  </div>
+
+                  <div class="directional_nav">
+                     <div class="previous_btn" title="Previous">
+                        <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" -->
+                        <!-- x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66"> -->
+                        <!-- <g> -->
+                        <!-- <g> -->
+                        <!-- <path class="icon-prev" fill="#474544" -->
+                        <!-- d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118 -->
+                        <!-- c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z" /> -->
+                        <!-- <path class="icon-prev" fill="#474544" -->
+                        <!-- d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z" /> -->
+                        <!-- </g> -->
+                        <!-- </g> -->
+                        <!-- </svg> -->
+                     </div>
+                     <div class="next_btn" title="Next">
+                        <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" -->
+                        <!-- x="0px" y="0px" width="50px" height="50px" viewBox="-11 -11.5 65 66"> -->
+                        <!-- <g> -->
+                        <!-- <g> -->
+                        <!-- <path class="icon-next" fill="#474544" -->
+                        <!-- d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z" /> -->
+                        <!-- <path class="icon-next" fill="#474544" -->
+                        <!-- d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z" /> -->
+                        <!-- </g> -->
+                        <!-- </g> -->
+                        <!-- </svg> -->
+                     </div>
+                  </div><!-- End // .directional_nav -->
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                  <!-- Slider End -->
+
+               </div>
+
+               <!-- <div class="entry-excerpt"> -->
+               <!--  -->
+               <!-- <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, -->
+               <!-- nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate -->
+               <!-- cursus a sit amet mauris. Morbi accumsan ipsum velit. </p> -->
+               <!--  -->
+               <!-- </div> -->
+
+            </div> <!-- primary end-->
+
+         </section> <!-- end section -->
+
+         <ul class="post-nav cf">
+            <li class="prev"><a href="#" rel="prev"><strong>Previous Entry</strong> Duis Sed Odio Sit Amet Nibh
+                  Vulputate</a></li>
+            <li class="next"><a href="#" rel="next"><strong>Next Entry</strong> Morbi Elit Consequat Ipsum</a></li>
+         </ul>
+
+      </div>
+
+   </div> <!-- content End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <!-- <ul class="footer-nav"> -->
+            <!-- <li><a href="../">Beranda.</a></li> -->
+            <!-- <li><a href="https://umarkovweb.site">Blog.</a></li> -->
+            <!-- <li><a href="/product/category.html">Produk.</a></li> -->
+            <!-- <li><a href="../about.html">Tentang.</a></li> -->
+            <!-- <li><a href="../contact-me.html">Hubungi.</a></li> -->
+            <!-- <li><a href="#" id="myLimodal">Password RAR</a></li> -->
+            <!-- </ul> -->
+
+            <ul class="footer-social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+               <!-- <li><a href="#"><i class="fa fa-telegram"></i></a></li> -->
+               <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+               <!-- <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> -->
+            </ul>
+
+            <ul class="copyright">
+               <li>Sandal Mely, Sandal Kaya Warna</li>
+               <li>Copyright &#169;
+                  <script
+                     type='text/javascript'>var creditsyear = new Date(); document.write(creditsyear.getFullYear());</script>
+                  <a href='javascript:window.location.href=window.location.href'>Sandal Mely</a>.
+               </li>
+            </ul>
+
+         </div>
+
+         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="/js/sticky.sandalmely.pagetitle.js"></script>
+   <script src="/js/jquery.flexslider.js"></script>
+   <script src="/js/doubletaptogo.js"></script>
+   <script src="/js/init.js"></script>
+   <script src="/js/modal-core.js"></script>
+
+   <!-- Slider 818 Script Start -->
+   <script>
+      $('.slider').each(function () {
+         var $this = $(this);
+         var $group = $this.find('.slide_group');
+         var $slides = $this.find('.slide');
+         var bulletArray = [];
+         var currentIndex = 0;
+         var timeout;
+
+         function move(newIndex) {
+            var animateLeft, slideLeft;
+
+            advance();
+
+            if ($group.is(':animated') || currentIndex === newIndex) {
+               return;
+            }
+
+            bulletArray[currentIndex].removeClass('active');
+            bulletArray[newIndex].addClass('active');
+
+            if (newIndex > currentIndex) {
+               slideLeft = '100%';
+               animateLeft = '-100%';
+            } else {
+               slideLeft = '-100%';
+               animateLeft = '100%';
+            }
+
+            $slides.eq(newIndex).css({
+               display: 'block',
+               left: slideLeft
+            });
+            $group.animate({
+               left: animateLeft
+            }, function () {
+               $slides.eq(currentIndex).css({
+                  display: 'none'
+               });
+               $slides.eq(newIndex).css({
+                  left: 0
+               });
+               $group.css({
+                  left: 0
+               });
+               currentIndex = newIndex;
+            });
+         }
+
+         function advance() {
+            clearTimeout(timeout);
+            timeout = setTimeout(function () {
+               if (currentIndex < ($slides.length - 1)) {
+                  move(currentIndex + 1);
+               } else {
+                  move(0);
+               }
+            }, 4000);
+         }
+
+         $('.next_btn').on('click', function () {
+            if (currentIndex < ($slides.length - 1)) {
+               move(currentIndex + 1);
+            } else {
+               move(0);
+            }
+         });
+
+         $('.previous_btn').on('click', function () {
+            if (currentIndex !== 0) {
+               move(currentIndex - 1);
+            } else {
+               move(3);
+            }
+         });
+
+         $.each($slides, function (index) {
+            var $button = $('<a class="slide_btn">&bull;</a>');
+
+            if (index === currentIndex) {
+               $button.addClass('active');
+            }
+            $button.on('click', function () {
+               move(index);
+            }).appendTo('.slide_buttons');
+            bulletArray.push($button);
+         });
+
+         advance();
+      });
+   </script> <!-- Slider 818 Script End -->
+
+   <!-- Bootstrap Image Modal Script Start -->
+   <script>
+      $(document).ready(function () {
+         var $lightbox = $('#lightbox');
+         $('[data-target="#lightbox"]').on('click', function (event) {
+            var $img = $(this).find('img'),
+               src = $img.attr('src'),
+               alt = $img.attr('alt'),
+               css = {
+                  'maxWidth': $(window).width() - 100,
+                  'maxHeight': $(window).height() - 100
+               };
+            $lightbox.find('img').attr('src', src);
+            $lightbox.find('img').attr('alt', alt);
+            $lightbox.find('img').css(css);
+         });
+         $lightbox.on('shown.bs.modal', function (e) {
+            var $img = $lightbox.find('img');
+            $lightbox.find('.modal-dialog').css({ 'width': $img.width() });
+            $lightbox.find('.close').removeClass('hidden');
+         });
+      });
+   </script>
+   <!-- Bootstrap Image Modal Script End -->
+
+   <!-- Image Modal Script Start -->
+
+   <!-- Image Modal Script End -->
+
+</body>
+
+</html>
