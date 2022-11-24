@@ -6,18 +6,33 @@
     /* border: 1px solid rgba(0, 0, 0, .2); */
 }
 
+/* Serian 818 */
 .biru818 {
     background: #2051ad;
 }
-
 .tosca818 {
     background: #216578;
 }
-
 .orange818 {
     background: #fb781d;
 }
-
 .merah818 {
     background: #c43b4b;
+}
+
+/* Serian 617 WT */
+.merah617wt {
+    background: #d65a5c;
+}
+.hijau617wt {
+    background: #53b53c;
+}
+.black617wt {
+    background: #414642;
+}
+.biru617wt {
+    background: #3c6fc0;
+}
+.tosca617wt {
+    background: #398791;
 }
