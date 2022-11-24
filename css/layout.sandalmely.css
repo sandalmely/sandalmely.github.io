@@ -1695,27 +1695,3 @@ footer .copyright li:first-child:before {
    background-color: #ca3479;
 
 }
-
-.box {
-   display: inline-block;
-   width: 20px;
-   height: 20px;
-   border-radius: 5px;
-   /* border: 1px solid rgba(0, 0, 0, .2); */
- }
- 
- .biru818 {
-   background: #2051ad;
- }
- 
- .tosca818 {
-   background: #216578;
- }
-
- .orange818 {
-   background: #fb781d;
- }
- 
- .merah818 {
-   background: #c43b4b;
- }
